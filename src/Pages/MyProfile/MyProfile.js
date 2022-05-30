@@ -11,7 +11,7 @@ const MyProfile = () => {
   <div class="card-body items-center text-center">
     <h2 class="card-title">Ahmed</h2>
     <p><span className='font-bold'>Email: </span> ahmednaim353@gmail.com</p>
-    <p><span className='font-bold'>education:</span> Diploma in css</p>
+    <p><span className='font-bold'>education:</span> Diploma in cse</p>
     <p><span className='font-bold'>skills: </span>html, css, javascript, react, wordpress</p>
   </div>
 </div>
