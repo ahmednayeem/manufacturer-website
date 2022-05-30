@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 
 
@@ -19,20 +19,22 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     let signInError;
+    const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from.pathname || "/";
+
+
+    useEffect( () =>{
+      if(user || gUser){
+        navigate(from, { replace: true});
+    }
+  
+    } , [user, gUser, from, navigate])
+
 
     if(loading || gLoading){
       return <Loading></Loading>
     }
-
-    if(error || gError){
-      signInError= <p>{error?.message || gError?.message}</p>
-    }
-
-
-    if(user || gUser){
-      console.log(user || gUser);
-  }
-
 
       
     if(error || gError){
@@ -43,7 +45,8 @@ const Login = () => {
         console.log(data);
         signInWithEmailAndPassword(data.email, data.password);
       }
-   
+
+
 
 
     return (
@@ -96,15 +99,15 @@ const Login = () => {
 </div>
 
 {signInError}      
-<input className='btn w-full max-w-xs text-white' type="submit" value="Login" />
+<input className='btn btn-outline w-full max-w-xs hover:bg-teal-300 hover:text-white' type="submit" value="Login" />
     </form>
 
-    <p className='text-center text-xl'><small>New here? <Link className='text-primary' to="/signup">Create New Account</Link></small></p>
+    <p className='text-center text-xl'><small>New here? <Link className='text-teal-400' to="/signup">Create New Account</Link></small></p>
 
     <div className="divider">OR</div>
     <button
      onClick={() => signInWithGoogle()}
-     className="btn btn-outline">Continue with google
+     className="btn btn-outline hover:bg-blue-900 hover:text-white">Continue with google
      </button>
   </div>
 </div>

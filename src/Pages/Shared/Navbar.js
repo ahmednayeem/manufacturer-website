@@ -1,15 +1,42 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import bike from '../../assets/icons/vecteezy_motor-classic-illustration_-removebg-preview.png';
+import auth from '../../firebase.init';
 import './Navbar.css'
 
 
 const Navbar = () => {
+
+  const [user] = useAuthState(auth);
+
+  const logout = () => {
+      signOut(auth);
+    };
+
   const menuItems = <>
  
-              <li className='text-xl hover:bg-sky-700  text-white  ease-in-out duration-300'><Link to="/">Home</Link></li>
-              <li className='text-white text-xl hover:bg-sky-700  ease-in-out duration-300'><Link to="/about">About</Link></li>
-              <li className='text-white text-xl hover:bg-sky-700  ease-in-out duration-300'><Link to="/blogs">blogs</Link></li>
+              <li className='text-xl hover:text-orange-400  text-white  ease-in-out duration-100'><Link to="/">Home</Link></li>
+              <li className='text-white text-xl hover:text-orange-400  ease-in-out duration-100'><Link to="/about">About</Link></li>
+              <li className='text-white text-xl hover:text-orange-400  ease-in-out duration-100'><Link to="/blogs">blogs</Link></li>
+
+              <li>
+          {user ? 
+  
+         <div>
+
+<li><Link to="/" className='text-white text-xl hover:text-orange-400  ease-in-out duration-100'>My Profile</Link></li>
+             
+              <Link to="/login" className="text-xl  text-white hover:text-orange-400  ease-in-out duration-100'"  onClick={logout} >Sign Out </Link>
+
+      
+         </div>
+
+        : 
+        <Link to="/login" className='text-xl  text-white hover:text-orange-400  ease-in-out duration-100'>Login</Link>}</li>
+
+
               </>
     return (
         <div className="navbar">
@@ -32,9 +59,7 @@ const Navbar = () => {
 
           </ul>
         </div>
-        <div className="navbar-end">
-         <Link to='/login'> <a className="btn text-white login">Login</a></Link>
-        </div>
+
       </div>
     );
 };

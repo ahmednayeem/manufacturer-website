@@ -4,7 +4,7 @@ import './Banner.css'
 const Banner = () => {
     return (
 
-<div className="hero min-h-screen" style={{backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.6) 100%), url(https://www.wallpaperup.com/uploads/wallpapers/2013/01/01/27175/c7c2670fcd8101ada00aaef952b708d7-1000.jpg)"}}>
+<div className="hero min-h-screen" style={{backgroundImage: "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(https://www.wallpaperup.com/uploads/wallpapers/2013/01/01/27175/c7c2670fcd8101ada00aaef952b708d7-1000.jpg)"}}>
   <div className="hero-overlay "></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
