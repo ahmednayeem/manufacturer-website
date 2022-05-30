@@ -32,7 +32,7 @@ const Comment = () => {
             
                     </div>
                     <div className='client-comment'>
-                        <p>2020 Intel-powered MacBook Air and MacBook Pro: These models have been completely eclipsed by the late 2020 models with the Apple M1 chip, from performance to battery life.</p>
+                        <p>High quality and easy to install. I also bought the pouches. Everything fit even with my handle bar speakers and tachometer.</p>
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@ const Comment = () => {
             
                     </div>
                     <div className='client-comment'>
-                        <p>2020 Intel-powered MacBook Air and MacBook Pro: These models have been completely eclipsed by the late 2020 models with the Apple M1 chip, from performance to battery lifer.</p>
+                        <p>High quality and easy to install. I also bought the pouches. Everything fit even with my handle bar speakers and tachometer.</p>
                     </div>
                 </div>
 
@@ -84,7 +84,7 @@ const Comment = () => {
             
                     </div>
                     <div className='client-comment'>
-                        <p>2020 Intel-powered MacBook Air and MacBook Pro: These models have been completely eclipsed by the late 2020 models with the Apple M1 chip, from performance to battery life.</p>
+                        <p>High quality and easy to install. I also bought the pouches. Everything fit even with my handle bar speakers and tachometer.</p>
                     </div>
                 </div>
 
@@ -110,7 +110,7 @@ const Comment = () => {
             
                     </div>
                     <div className='client-comment'>
-                        <p>2020 Intel-powered MacBook Air and MacBook Pro: These models have been completely eclipsed by the late 2020 models with the Apple M1 chip, from performance to battery life.</p>
+                        <p>High quality and easy to install. I also bought the pouches. Everything fit even with my handle bar speakers and tachometer.</p>
                     </div>
                 </div>
 
@@ -137,7 +137,7 @@ const Comment = () => {
             
                     </div>
                     <div className='client-comment'>
-                        <p>2020 Intel-powered MacBook Air and MacBook Pro: These models have been completely eclipsed by the late 2020 models with the Apple M1 chip, from performance to battery life.</p>
+                        <p>High quality and easy to install. I also bought the pouches. Everything fit even with my handle bar speakers and tachometer.</p>
                     </div>
                 </div>
 
@@ -164,7 +164,7 @@ const Comment = () => {
             
                     </div>
                     <div className='client-comment'>
-                        <p>2020 Intel-powered MacBook Air and MacBook Pro: These models have been completely eclipsed by the late 2020 models with the Apple M1 chip, from performance to battery life.</p>
+                        <p>High quality and easy to install. I also bought the pouches. Everything fit even with my handle bar speakers and tachometer.</p>
                     </div>
                 </div>
 

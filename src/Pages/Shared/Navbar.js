@@ -19,14 +19,14 @@ const Navbar = () => {
  
               <li className='text-xl hover:text-orange-400  text-white  ease-in-out duration-100'><Link to="/">Home</Link></li>
               <li className='text-white text-xl hover:text-orange-400  ease-in-out duration-100'><Link to="/about">About</Link></li>
-              <li className='text-white text-xl hover:text-orange-400  ease-in-out duration-100'><Link to="/blogs">blogs</Link></li>
+              <li className='text-white text-xl hover:text-orange-400  ease-in-out duration-100'><Link to="/blogs">blog</Link></li>
 
               <li>
           {user ? 
   
          <div>
 
-<li><Link to="/" className='text-white text-xl hover:text-orange-400  ease-in-out duration-100'>My Profile</Link></li>
+<li><Link to="/myprofile" className='text-white text-xl hover:text-orange-400  ease-in-out duration-100'>My Profile</Link></li>
              
               <Link to="/login" className="text-xl  text-white hover:text-orange-400  ease-in-out duration-100'"  onClick={logout} >Sign Out </Link>
 
