@@ -11,6 +11,9 @@ import ProductDetail from './Pages/ProductDetail';
 import RequireAuth from './Pages/Login/RequireAuth'
 import Blog from './Pages/Blog';
 import MyProfile from './Pages/MyProfile/MyProfile';
+import NotFound from './Pages/Shared/NotFound';
+
+
 
 
 function App() {
@@ -32,6 +35,8 @@ function App() {
         <Route path='/myprofile' element={<MyProfile></MyProfile>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
