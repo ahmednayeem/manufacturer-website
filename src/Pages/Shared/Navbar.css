@@ -9,3 +9,19 @@
 .navbar{
     background:#000C24
 }
+
+
+nav a.active{
+    color:#fff;
+ 
+}
+
+a{
+    text-decoration: none;
+    color:#08C6F9;
+    font-size: 19px;
+    margin-right: 40px; 
+}
+a:hover{
+    color:#08C6F9;
+}

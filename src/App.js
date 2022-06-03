@@ -10,8 +10,12 @@ import SignUp from './Pages/Login/SignUp';
 import ProductDetail from './Pages/ProductDetail';
 import RequireAuth from './Pages/Login/RequireAuth'
 import Blog from './Pages/Blog';
-import MyProfile from './Pages/MyProfile/MyProfile';
 import NotFound from './Pages/Shared/NotFound';
+import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
+import Dashboard from './Pages/Dashboard/Dashboard';
+
+
+
 
 
 
@@ -32,7 +36,8 @@ function App() {
         }></Route>
         <Route path="/about" element={<About></About>} />
         <Route path='/blogs' element={<Blog></Blog>}></Route>
-        <Route path='/myprofile' element={<MyProfile></MyProfile>}></Route>
+        <Route path='/myprotfolio' element={<MyPortfolio></MyPortfolio>}></Route>
+        <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         

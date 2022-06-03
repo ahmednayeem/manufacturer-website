@@ -26,7 +26,11 @@ const Navbar = () => {
   
          <div>
 
-<li><Link to="/myprofile" className='text-white text-xl hover:text-orange-400  ease-in-out duration-100'>My Profile</Link></li>
+
+<li><Link to="/myprotfolio" className='text-white text-xl hover:text-orange-400  ease-in-out duration-100'>My Profile</Link></li>
+
+<li><Link to="/dashboard" className='text-white text-xl hover:text-orange-400  ease-in-out duration-100'>Dashboard</Link></li>
+             
              
               <Link to="/login" className="text-xl  text-white hover:text-orange-400  ease-in-out duration-100'"  onClick={logout} >Sign Out </Link>
 
